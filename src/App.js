@@ -1,16 +1,16 @@
 
 import { useState } from 'react';
 import './App.css';
-import About from './components/About';
+// import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
   
-} from "react-router-dom";
+// } from "react-router-dom";
 
 
 function App() {
@@ -70,25 +70,25 @@ function App() {
   }
   return (
     <>
-      <Router>
+      {/* <Router> */}
       <Navbar title="TextUtils" mode={mode} toggleModeDark={toggleModeDark} toggleModeBlue={toggleModeBlue} toggleModePink={toggleModePink} toggleModeGreen={toggleModeGreen} dtext={dtext}/>
       <div className='container'>
-      
+{/*       
         <Switch>
           <Route path="/about">
             <About />
           </Route>
          
-          <Route path="/">
+          <Route path="/"> */}
             <TextForm heading="Enter the text to analyze below" mode={mode} backgroundColor={backgroundColor}  ></TextForm>
            
-          </Route>
+          {/* </Route>
         </Switch>
-        
+         */}
         
        
       </div>  
-      </Router>
+      {/* </Router> */}
      
     </>
   );
